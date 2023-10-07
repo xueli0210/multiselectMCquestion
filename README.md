@@ -10,7 +10,7 @@ otherCheckbox: The checkbox with the ID "other_checkbox," which is used to enabl
 userDetailInput: The input field with the ID "user_detail," which allows users to specify additional details when the "Other" checkbox is selected.
 toggleUserDetailInput Function: This function is responsible for enabling or disabling the "user_detail" input based on the state of the "Other" checkbox (otherCheckbox). It checks if otherCheckbox is checked, and if it is, it enables the userDetailInput. If it's not checked, it disables the input and clears its value.
 
-isAtLeastOneL12mChecked Function: This function checks whether at least one of the Q_l12m checkboxes is checked. It iterates through all the Q_l12m checkboxes except the "None of the above" checkbox and returns true if any of them are checked, or false otherwise.
+isAtLeastOneL12mChecked Function: This function checks whether at least one of the Q_l12m checkboxes is checked. It iterates through all the Q_l12m checkboxes and returns true if any of them are checked, or false otherwise.
 
 validateForm Function: This function handles form validation. It is called when the form is submitted (via the submit event listener). Here are the validation checks it performs:
 
