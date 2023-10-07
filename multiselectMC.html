@@ -1,13 +1,23 @@
 <form>
+  What is your gender?<br/>
+  <label for="female"><input type="radio" name="Q_gender" value="female" id="female" required>Female</label><br/>
+  <label for="male"><input type="radio" name="Q_gender" value="male" id="male" required>Male</label><br/>
+  <label for="other"><input type="radio" name="Q_gender" value="other" id="other" required>Other</label><br/>
+  <label for="NA"><input type="radio" name="Q_gender" value="NA" id="NA" required>Prefer not to answer</label><br/>
+  <br/>
+
+  <p></p>
+
   What did you do in the last 12 months?<br />
   <label>
     <input type="checkbox" name="Q_l12m" value="travel" id="travel">Traveled to a foreign country</label><br />
   <label>
-    <input type="checkbox" name="Q_l12m" value="concert" id="concert">Attended a concert
-  </label><br />
+    <input type="checkbox" name="Q_l12m" value="concert" id="concert">Attended a concert</label><br />
   <label><input type="checkbox" name="Q_l12m" value="job" id="job">Changed to a new job</label><br />
   <label><input type="checkbox" name="Q_l12m" value="marriage" id="marriage">Got married</label><br />
   <label><input type="checkbox" name="Q_l12m" value="car" id="car">Bought a car</label><br />
+  <label><input type="checkbox" name="Q_l12m" value="other" id="other_checkbox">Other (please specify): <input type="text" name="Q_l12m" id="user_detail" disabled></label><br />
   <label><input type="checkbox" name="Q_l12m" value="nota" id="nota">None of the above</label><br />
+
   <input type="submit">
 </form>
