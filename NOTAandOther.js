@@ -1,3 +1,16 @@
+// Q_ethnicity
+function otherFunction(){
+		if (document.getElementById('other_ethnicity').checked){
+      document.getElementById('other_option').style.display="inline";
+      document.getElementById('please_specify').setAttribute('required',true);
+		}
+		else{ 
+			document.getElementById('please_specify').removeAttribute('required');
+			document.getElementById('other_option').style.display="none";
+		}
+	}
+
+// Q_l12m
 const l12mCheckboxes = document.querySelectorAll('input[name="Q_l12m"]');
 const otherCheckbox = document.getElementById('other_checkbox');
 const userDetailInput = document.getElementById('user_detail');
@@ -5,7 +18,7 @@ const userDetailInput = document.getElementById('user_detail');
 const checkboxes = document.querySelectorAll('input[name="Q_l12m"]:not(#nota)');
 const notaCheckbox = document.getElementById('nota');
 
-// Function to enable or disable the user_detail input based on the other_checkbox state
+// Q_l12m Function to enable / disable the user_detail input based on  other_checkbox state
 function toggleUserDetailInput() {
   userDetailInput.disabled = !otherCheckbox.checked;
   // when otherCheckbox gets unchecked, userDetailInput gets wiped out
@@ -14,7 +27,7 @@ function toggleUserDetailInput() {
   }
 }
 
-// Function to enable or disable checkboxes based on the "None of the above" checkbox
+// Q_l12m Function to enable or disable checkboxes based on the "None of the above" checkbox
   function updateCheckboxes() {
     checkboxes.forEach((checkbox) => {
       checkbox.disabled = notaCheckbox.checked;
@@ -24,7 +37,7 @@ function toggleUserDetailInput() {
     }
   }
 
-// Function to check if at least one Q_l12m checkbox is checked
+// Q_l12m Function to check if at least one checkbox is checked
 function isAtLeastOneL12mChecked() {
   return Array.from(l12mCheckboxes).some((checkbox) => checkbox.checked);
 }
@@ -44,10 +57,12 @@ function validateForm(event) {
 }
 
 // Add event listeners
+// Q_l12m
 otherCheckbox.addEventListener('change', toggleUserDetailInput);
 notaCheckbox.addEventListener('change', updateCheckboxes);
 
 // Set initial states
+// Q_l12m
 toggleUserDetailInput();
 updateCheckboxes();
 
