@@ -1,23 +1,42 @@
 <form>
-  What is your gender?<br/>
-  <label for="female"><input type="radio" name="Q_gender" value="female" id="female" required>Female</label><br/>
-  <label for="male"><input type="radio" name="Q_gender" value="male" id="male" required>Male</label><br/>
-  <label for="other"><input type="radio" name="Q_gender" value="other" id="other" required>Other</label><br/>
-  <label for="NA"><input type="radio" name="Q_gender" value="NA" id="NA" required>Prefer not to answer</label><br/>
-  <br/>
 
-  <p></p>
+  Which of the following best describes your ethnicity?<br />
+  <label for="radio1">
+    <input id="radio1" name="Q_ethnicity" type="radio" onchange="otherFunction()" required> White or Caucasian<br />
+    <label for="radio2">
+      <input id="radio2" name="Q_ethnicity" type="radio" onchange="otherFunction()" required> Black or African American</label><br />
+    <label for="radio3">
+      <input id="radio3" name="Q_ethnicity" type="radio" onchange="otherFunction()" required> Asian or Asian American</label><br />
+    <label for="radio4"><input id="radio4" name="Q_ethnicity" type="radio" onchange="otherFunction()" required> American Indian, Alaska Native, Native Hawaiian or Pacific Islander</label> <br />
+    <label for="other_ethnicity">
+      <input id="other_ethnicity" name="Q_ethnicity" type="radio" onchange="otherFunction()" required> Other</label>
 
-  What did you do in the last 12 months?<br />
-  <label>
-    <input type="checkbox" name="Q_l12m" value="travel" id="travel">Traveled to a foreign country</label><br />
-  <label>
-    <input type="checkbox" name="Q_l12m" value="concert" id="concert">Attended a concert</label><br />
-  <label><input type="checkbox" name="Q_l12m" value="job" id="job">Changed to a new job</label><br />
-  <label><input type="checkbox" name="Q_l12m" value="marriage" id="marriage">Got married</label><br />
-  <label><input type="checkbox" name="Q_l12m" value="car" id="car">Bought a car</label><br />
-  <label><input type="checkbox" name="Q_l12m" value="other" id="other_checkbox">Other (please specify): <input type="text" name="Q_l12m" id="user_detail" disabled></label><br />
-  <label><input type="checkbox" name="Q_l12m" value="nota" id="nota">None of the above</label><br />
+    <div id="other_option">
+      <label for="please_specify">Please specify:</label>
+      <input type="text" name="nickname" id="please_specify">
+    </div>
 
-  <input type="submit">
+    <p></p>
+    
+    What is your gender?<br />
+    <label for="female"><input type="radio" name="Q_gender" value="female" id="female" required>Female</label><br />
+    <label for="male"><input type="radio" name="Q_gender" value="male" id="male" required>Male</label><br />
+    <label for="other"><input type="radio" name="Q_gender" value="other" id="other" required>Other</label><br />
+    <label for="NA"><input type="radio" name="Q_gender" value="NA" id="NA" required>Prefer not to answer</label><br />
+    <br />
+
+    <p></p>
+
+    What did you do in the last 12 months?<br />
+    <label>
+      <input type="checkbox" name="Q_l12m" value="travel" id="travel">Traveled to a foreign country</label><br />
+    <label>
+      <input type="checkbox" name="Q_l12m" value="concert" id="concert">Attended a concert</label><br />
+    <label><input type="checkbox" name="Q_l12m" value="job" id="job">Changed to a new job</label><br />
+    <label><input type="checkbox" name="Q_l12m" value="marriage" id="marriage">Got married</label><br />
+    <label><input type="checkbox" name="Q_l12m" value="car" id="car">Bought a car</label><br />
+    <label><input type="checkbox" name="Q_l12m" value="other" id="other_checkbox">Other (please specify): <input type="text" name="Q_l12m" id="user_detail" disabled></label><br />
+    <label><input type="checkbox" name="Q_l12m" value="nota" id="nota">None of the above</label><br />
+
+    <input type="submit">
 </form>
