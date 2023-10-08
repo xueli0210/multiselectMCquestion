@@ -1,6 +1,9 @@
 The JS file creates functionality that enables or disables checkboxes based on the state of the "Other (please specify)" and the "None of the above" checkboxes. It also ensures that at least at least 1 of the multi-select question's options is selected.
 
-Other:
+Other (Q_ethnicity):
+In this single select, if Other is selected, a previously invisible "please specify" text input will appear requiring an input. If another option is later checked, the "please specify" textbox goes away.
+
+Other (Q_l12m):
 
 1. Selecting DOM Elements: The code starts by selecting several HTML elements using their IDs or attribute values. 
 2. toggleUserDetailInput Function: This function is responsible for enabling or disabling the "user_detail" input based on the state of the "Other" checkbox (otherCheckbox). It checks if otherCheckbox is checked, and if it is, it enables the userDetailInput. If it's not checked, it disables the input and clears its value.
